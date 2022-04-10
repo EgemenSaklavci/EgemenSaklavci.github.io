@@ -138,7 +138,7 @@ $(document).keypress(e => {
 
 })
 
-$("body").click(function (ev) {
+$("body").on("touch" ,function (ev) {
     if (ev.target.id == "board") return;
 
     if (gameLoop) {
