@@ -141,15 +141,9 @@ $(document).keypress(e => {
 
 var isDragging = false
 
-document.addEventListener("touchstart", function (e) {
-    e.preventDefault()
-})
 
-document.addEventListener("touchmove", function (e) {
-    e.preventDefault()
-})
 
-document.addEventListener("touchend", function () {
+document.addEventListener("mouseup", function () {
     if (isDragging) {
         isDragging = false;
         return;
