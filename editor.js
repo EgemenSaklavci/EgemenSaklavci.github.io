@@ -108,7 +108,6 @@ function thingDragStart(ev) {
         Board.coins.find(x => x.id == ev.target.id)
 
     info.isModel = false
-    isDragging = true
 
 }
 
@@ -139,20 +138,22 @@ $(document).keypress(e => {
 
 })
 
-var isDragging = false
-
-
-
-document.addEventListener("mouseup", function () {
-    if (isDragging) {
-        isDragging = false;
-        return;
-    }
+document.addEventListener("touchstart", function (e) {
+    if (! e.target.matches("body")) return;
     if (gameLoop) {
         stopGameLoop();
     } else {
         startGameLoop();
     }
+
 })
 
-   
+document.addEventListener("click", function (e) {
+    if (! e.target.matches("body")) return;
+    if (gameLoop) {
+        stopGameLoop();
+    } else {
+        startGameLoop();
+    }
+
+})

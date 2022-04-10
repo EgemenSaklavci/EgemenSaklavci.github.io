@@ -1,6 +1,6 @@
 const chapter = [
     {
-      "message": "\"Kareler\",(isim değişecek) auto-control bir puzzle oyunudur. \n\nOyunda üçgen olan arabaların paraları toplamasını sağlayacaksın. \n\nilk bölüm için hiçbir şey yapmana gerek yok.\n\nbölümü başlatmak ve durdurmak için klavyede herhangi bir tuşa bas. Telefondaysan sadece ekrana dokun. ",
+      "message": "\"Kareler\",(isim değişecek) auto-control bir puzzle oyunudur. \n\nOyunda üçgen olan arabaların paraları toplamasını sağlayacaksın. \n\nilk bölüm için hiçbir şey yapmana gerek yok.\n\nbölümü başlatmak ve durdurmak için klavyede herhangi bir tuşa bas veya sayfada herhangi bir yere dokun. ",
       "level": {
         "things": [
           [
