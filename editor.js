@@ -124,11 +124,7 @@ function thing_right_click(ev) { //* delete the object when double click
 
 }
 
-$("#button").click(function () { //? stop/start the game when enter pressed
 
-    
-
-})
 $(document).keypress(e => {
     if (gameLoop) {
         stopGameLoop();
@@ -157,3 +153,4 @@ document.addEventListener("click", function (e) {
     }
 
 })
+
