@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+#app {
+    width: min-content;
+    height: min-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 4fr 8fr 4fr;
+}
+
+#models {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    z-index: 5;
+}
+
+.model > .wall {
+    border: 2px solid;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.model {
+    margin: 5px;
+    z-index: 7;
+    cursor: pointer;
+}
+
+#models-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

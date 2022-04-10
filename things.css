@@ -1,0 +1,103 @@
+:root {
+    --orange: #ff5211;
+    --blue: #2020fb;
+    --green: #1d9b1d;
+    --red: #eb0b0b;
+    --purple: #bd00bd;
+    --back: white;
+    --background-dark: #bbbbbb;
+    --background-light: #7d7dc3;
+
+    /* ! scalings */
+    --parse: 50px;
+    --square: 54px;
+}
+
+* {
+    margin: 0;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+svg {
+    border: 2px solid;
+    border-radius: 10px;
+    width: var(--parse);
+    height: var(--parse);
+}
+
+.model {
+    width: var(--parse);
+    height: var(--parse);
+}
+
+.square {
+    border: 0px solid;
+    width: var(--square);
+    height: var(--square);
+    cursor: pointer;
+}
+
+.black {
+    background-color: var(--background-dark);
+}
+
+.white {
+    background-color: var(--background-light);
+}
+
+.black.editable {
+    background-color: #11ca48 !important;
+}
+.white.editable {
+    background-color: #008c2a !important;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.thing {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.wall {
+    z-index: 1;
+    width: var(--square);
+    height: var(--square);
+    background-color: var(--back);
+    pointer-events: none;
+}
+
+svg,
+polygon,
+circle {
+    pointer-events: none;
+}
+
+line {
+    stroke: black;
+    stroke-width: 4px;
+}
+
+/* .ui-draggable-dragging {
+    transform: scale(1.5);
+    z-index: 100;
+} */
+
+.center {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
