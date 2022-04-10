@@ -73,8 +73,4 @@ oynadığın için teşekkürler.
 
 $(document).ready( function () {
     display(chapter[index]);
-
-    if (window.innerWidth < 500) {
-        document.querySelector("meta[name]").setAttribute("content", "width=device-width, initial-scale=0.5")
-    }
 })
