@@ -141,14 +141,14 @@ $(document).keypress(e => {
 
 var isDragging = false
 
-/* document.addEventListener("touchstart", function (e) {
+document.addEventListener("touchstart", function (e) {
     e.preventDefault()
 })
 
 document.addEventListener("touchmove", function (e) {
     e.preventDefault()
 })
- */
+
 document.addEventListener("touchend", function () {
     if (isDragging) {
         isDragging = false;
