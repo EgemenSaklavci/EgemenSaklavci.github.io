@@ -138,3 +138,12 @@ $(document).keypress(e => {
 
 })
 
+$("body").click(function (ev) {
+    if (ev.target.id == "board") return;
+
+    if (gameLoop) {
+        stopGameLoop();
+    } else {
+        startGameLoop();
+    }
+})
