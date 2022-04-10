@@ -35,7 +35,7 @@ function display(level) {
 
 var index = 0;
 
-display(chapter[index])
+
 
 function nextLevel() {
 
@@ -70,3 +70,7 @@ oynadığın için teşekkürler.
 
 
 }
+
+$(document).ready( function () {
+    display(chapter[index])
+})
