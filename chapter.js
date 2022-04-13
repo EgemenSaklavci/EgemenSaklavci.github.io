@@ -11,7 +11,7 @@ function data(key, _default) {
 
 function display(level) {
 
-    if (level.message != "") alert(level.message)
+    if (level.message != "") message(level.message)
 
     info.isCreator = true;
 
@@ -43,12 +43,12 @@ function nextLevel() {
 
     setTimeout(() => {
 
-        alert("Tebrikler!")
+        message("Tebrikler!")
 
         index++;
     
         if (chapter.length == index) {
-            alert(`
+            message(`
 "Kareler"in ilk sürümü bu kadardı... 
 oynadığın için teşekkürler.
 -Egemen Saklavcı`)
@@ -66,8 +66,24 @@ oynadığın için teşekkürler.
 
     }, 1000)
 
-  
+}
 
+function message(text) {
+
+    $("body").append(/*html*/`
+        <div class="message-card" style="opacity: 0">
+            <p>
+                ${text}
+            </p>
+        </div>
+    `)
+
+    $(".message-card").css("opacity", 1)
+
+    $(".message-card").click(function () {
+        $(".message-card").css("opacity", 0);
+        setTimeout(() => $(".message-card").remove(), 100)
+    })
 
 }
 

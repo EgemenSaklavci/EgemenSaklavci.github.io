@@ -40,3 +40,21 @@ body {
     flex-direction: row;
     align-items: center;
 }
+
+
+.message-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);;
+    z-index: 1000;
+    width: 40vw;
+    height: min-content;
+    text-align: center;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: opacity 1s, linear;
+}

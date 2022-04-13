@@ -35,7 +35,7 @@ const info = { //? represents info about colors, directs and html
 
     isModel: false,
     modelHtml: $("#models").html(),
-    isCreator: false,
+    isCreator: true,
     size : []
 
 }
@@ -176,7 +176,7 @@ const startGameLoop = () => {
         Board.in.filter(x => x.type == "Piston").forEach(x => x.moved = false);
 
         if (Board.coins.every(c => !c.active)) {
-            nextLevel()
+          /*   nextLevel() */
         }
 
     }, 500)
