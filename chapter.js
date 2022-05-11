@@ -46,25 +46,27 @@ function nextLevel() {
         alert("Tebrikler!")
 
         index++;
-
+    
         if (chapter.length == index) {
-            alert(`"Kareler"in ilk sürümü bu kadardı... 
-            oynadığın için teşekkürler.`)
+            alert(`
+"Kareler"in ilk sürümü bu kadardı... 
+oynadığın için teşekkürler.
+-Egemen Saklavcı`)
         } else {
-
+            
             setTimeout(() => {
-
+                
                 stopGameLoop();
                 display(chapter[index])
-
+                
             }, 1000)
-
-
+    
+        
         }
 
     }, 1000)
 
-
+  
 
 
 }

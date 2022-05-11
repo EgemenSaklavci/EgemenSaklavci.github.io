@@ -73,7 +73,6 @@ const square_droppable = {
 function square_right_click(ev) {
 
     ev.preventDefault()
-    if (!info.isCreator) return;
 
         let t = eval(focusedThing.type);
         let prop = [ev.target.id, focusedThing.direct, focusedThing.color];
