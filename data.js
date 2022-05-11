@@ -1,6 +1,6 @@
 const chapter = [
     {
-      "message": "\"Kareler\",(isim değişecek) auto-control bir puzzle oyunudur. \n\nOyunda üçgen olan arabaların paraları toplamasını sağlayacaksın. \n\nilk bölüm için hiçbir şey yapmana gerek yok.\n\nbölümü başlatmak ve durdurmak için klavyede herhangi bir tuşa bas veya sayfada herhangi bir yere uzun dokun. ",
+      "message": "\"Kareler\",(isim değişecek) auto-control bir puzzle oyunudur. \n\nOyunda içi üçgen olan arabaların yuvarlak paraları toplamasını sağlayacaksın. \n\nilk bölüm için hiçbir şey yapmana gerek yok.\n\nbölümü başlatmak ve durdurmak için herhangi bir tuşa bas.",
       "level": {
         "things": [
           [
@@ -679,7 +679,7 @@ const chapter = [
       }
     },
     {
-      "message": "Çember olan nesneler kutudur. Arabalar kutuları ittirebilir. Kutuların renklerine göre ağırlıkları vardır. \n\nTuruncu maviden güçlüdür. Turuncu araba bütün kutuları ittirebilir. Mavi araba sadece mavi kutuları ittirebilir.",
+      "message": "İçi çember olan nesneler kutudur. Arabalar kutuları ittirebilir. Kutuların renklerine göre ağırlıkları vardır. \n\nTuruncu maviden güçlüdür. Turuncu araba bütün kutuları ittirebilir. Mavi araba sadece mavi kutuları ittirebilir.",
       "level": {
         "things": [
           [

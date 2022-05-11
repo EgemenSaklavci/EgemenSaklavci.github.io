@@ -124,7 +124,11 @@ function thing_right_click(ev) { //* delete the object when double click
 
 }
 
+$("#button").click(function () { //? stop/start the game when enter pressed
 
+    
+
+})
 $(document).keypress(e => {
     if (gameLoop) {
         stopGameLoop();
@@ -134,26 +138,3 @@ $(document).keypress(e => {
 
 })
 
-document.addEventListener("touchstart", function (e) {
-    if (! e.target.matches("body")) return;
-    if (gameLoop) {
-        stopGameLoop();
-    } else {
-        startGameLoop();
-    }
-
-})
-
-document.addEventListener("click", function (e) {
-    if (! e.target.matches("body")) return;
-    if (gameLoop) {
-        stopGameLoop();
-    } else {
-        startGameLoop();
-    }
-
-})
-
-$(".board-size-input").change(function () {
-    writeBoard($("#row").val(), $("#column").val())
-})
