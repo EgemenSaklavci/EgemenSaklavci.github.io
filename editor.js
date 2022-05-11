@@ -154,3 +154,6 @@ document.addEventListener("click", function (e) {
 
 })
 
+$(".board-size-input").change(function () {
+    writeBoard($("#row").val(), $("#column").val())
+})

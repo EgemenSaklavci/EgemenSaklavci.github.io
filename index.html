@@ -86,12 +86,16 @@
                 </div>
 
             </div>
-            
-            <div style="width: 54px; height: 54px; cursor: pointer;"  id="button">
-                <svg style="background-color: red;">
-                    start
-                </svg>
+
+            <div class="flex">
+            <label for="row">row</label>
+            <input type="range" id="row" class="board-size-input" name="row" min="0" max="15" value="6">
+            <label for="column">column</label>
+            <input type="range" id="column" class="board-size-input" name="column" min="0" max="15" value="6">
+            <label for="speed">speed</label>
+            <input type="range" id="speed" name="speed" min="1" max="5" value="1">
             </div>
+     
         </div>
 
 
